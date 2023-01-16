@@ -1,7 +1,8 @@
 local Path = require(script.Parent.Path)
 local RouterContext = require(script.Parent.RouterContext)
+local hooks = require(script.Parent.hooks)
 
-local function useRouteMatch(hooks, options)
+local function useRouteMatch(options)
 	if type(options) == "table" then
 		options = { path = options }
 	end

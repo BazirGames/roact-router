@@ -1,7 +1,5 @@
-import { Hooks } from "./hooks";
-
 import { PathMatchResults } from "./Path"
 
-declare function useParams(hooks: Pick<Hooks, "useContext">): PathMatchResults | undefined
+declare function useParams(): PathMatchResults | undefined
 
 export = useParams

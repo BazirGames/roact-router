@@ -16,6 +16,8 @@ export interface RouteProps {
 
 	render?: (rendererProps: RouteRendererProps) => Roact.Element | undefined
 	component?: Roact.Component<RouteRendererProps>
+	component?: Roact.FunctionComponent<RouteRendererProps>
+	component?: Roact.ComponentConstructor<RouteRendererProps>
 }
 
 declare class Route extends Roact.Component {
